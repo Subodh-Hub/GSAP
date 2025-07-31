@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: black; */
+  cursor: none;
+  font-family: system-ui;
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cursor {
+  position: fixed;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 5px;
+  font-weight:400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 9;
+}
+
+#image {
+  height: 500px;
+  width: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+#overlay {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}

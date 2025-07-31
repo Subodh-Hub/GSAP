@@ -16,7 +16,7 @@ string.addEventListener("mouseleave", () => {
   console.log("mouseLeave");
   gsap.to("svg path", {
     attr: { d: finalPath },
-    duration: 0.8,
+    duration: 0.,
     ease:"elastic.out(1,0.2)"
   });
 });
